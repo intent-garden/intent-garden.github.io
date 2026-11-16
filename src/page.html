@@ -1,0 +1,28 @@
+<!doctype html>
+<html lang="$lang">
+<head>
+<meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1">
+<title>$title</title><meta name="description" content="$description">
+<meta name="theme-color" content="#f5f3ed">
+<link rel="canonical" href="https://intent-garden.org/$lang/">
+<link rel="alternate" hreflang="ru" href="https://intent-garden.org/ru/"><link rel="alternate" hreflang="en" href="https://intent-garden.org/en/">
+<meta property="og:title" content="$title"><meta property="og:description" content="$description"><meta property="og:type" content="website"><meta property="og:url" content="https://intent-garden.org/$lang/">
+<link rel="icon" href="/assets/mark.svg" type="image/svg+xml">
+<link rel="stylesheet" href="/assets/site.css?v=$css_version"><script src="/assets/site.js?v=$js_version" defer></script>
+</head>
+<body>
+<a class="skip" href="#content">$skip</a>
+<header class="wrap header"><a class="brand" href="/$lang/" aria-label="Intent Garden"><img src="/assets/mark.svg" width="32" height="32" alt=""><span>intent garden<span class="brand-dot">.</span></span></a><nav aria-label="$navigation"><a class="nav-projects" href="#projects">$projects_label</a><a href="https://github.com/intent-garden">GitHub <span aria-hidden="true">↗</span></a><span class="languages"><a href="/ru/" lang="ru" hreflang="ru" $ru_current>RU</a><a href="/en/" lang="en" hreflang="en" $en_current>EN</a></span></nav></header>
+<main id="content">
+<section class="wrap intro"><div><div class="eyebrow"><span class="seed"></span> INTENT GARDEN / RULEROM</div><h1>$headline</h1></div><p class="intro-copy">$intro</p></section>
+<section class="wrap ecosystem" aria-label="$map_label">
+<div class="garden-map">$diagram<div class="map-caption"><span><i class="line-sample"></i>$use_label</span><span><i class="line-sample dotted"></i>$ideas_label</span><span class="map-hint">$map_hint</span></div></div>
+<aside class="inspector" aria-labelledby="selected-title"><div id="project-inspector" aria-live="polite" aria-atomic="true">$initial_project</div><div class="inspector-bottom"><span class="tiny-cross" aria-hidden="true">✳</span><p>$inspector_note</p></div></aside>
+</section>
+<section class="wrap project-section" id="projects"><div class="section-heading"><div><div class="eyebrow">$projects_eyebrow</div><h2>$projects_heading</h2></div><p>$projects_intro</p></div><div class="project-grid">$project_cards</div></section>
+<section class="wrap connections-section"><div class="section-heading"><div><div class="eyebrow">$connections_eyebrow</div><h2>$connections_heading</h2></div><p>$connections_intro</p></div><div class="connection-list">$connections</div></section>
+<section class="wrap contact"><div><div class="eyebrow">$contact_eyebrow</div><h2>$contact_heading</h2><p>$contact_copy</p></div><a class="contact-link" href="mailto:intent@rulerom.com">intent@rulerom.com <span aria-hidden="true">↗</span></a></section>
+</main>
+<footer class="wrap footer"><span>© 2026 Intent Garden</span><span>$footer_note</span><a href="https://github.com/rulerom">Rulerom ↗</a></footer>
+<script type="application/json" id="project-data">$project_data</script>
+</body></html>
