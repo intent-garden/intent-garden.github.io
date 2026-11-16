@@ -37,3 +37,8 @@ This clean repository contains the new public static website only. The earlier
 website and PHP ticket/payment API remain in a separate private repository.
 Do not copy its configs, credentials or Git history here. This deployment has no
 server-side API or ticket issuance. Licensing of each ecosystem project is separate.
+
+## Analytics
+
+Russian and English pages share Yandex.Metrika counter `106900676` in
+`src/page.html`. The tag loads asynchronously; a no-JavaScript pixel is included.
