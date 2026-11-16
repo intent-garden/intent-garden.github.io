@@ -4,7 +4,7 @@
       "id": "decima", "name": "Decima‑8", "label": "Decima", "color": "#535898", "kind": "research",
       "ru": {"role": "Вычислительная модель", "status": "Исследование", "description": "Нейроморфная архитектура с тайлами, сигналами и явным состоянием. Исполняемое C-ядро и стенды помогают проверять вычислительные гипотезы.", "connection": "Основа DragonFly и пространство экспериментов, рядом с которым развиваются язык и инструменты интерфейса."},
       "en": {"role": "Computational model", "status": "Research", "description": "A neuromorphic architecture built around tiles, signals and explicit state. An executable C core and test benches make computational ideas testable.", "connection": "The foundation for DragonFly and a space for experiments alongside the language and interface tools."},
-      "links": []
+      "links": [{"label": "docs", "url": "https://decima.rulerom.com/"}]
     },
     {
       "id": "dragonfly", "name": "DragonFly", "label": "DragonFly", "color": "#36795a", "kind": "research",
