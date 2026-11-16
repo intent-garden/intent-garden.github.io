@@ -1,41 +1,169 @@
 {
   "projects": [
     {
-      "id": "decima", "name": "Decima‑8", "label": "Decima", "color": "#535898", "kind": "research",
-      "ru": {"role": "Вычислительная модель", "status": "Исследование", "description": "Нейроморфная архитектура с тайлами, сигналами и явным состоянием. Исполняемое C-ядро и стенды помогают проверять вычислительные гипотезы.", "connection": "Основа DragonFly и пространство экспериментов, рядом с которым развиваются язык и инструменты интерфейса."},
-      "en": {"role": "Computational model", "status": "Research", "description": "A neuromorphic architecture built around tiles, signals and explicit state. An executable C core and test benches make computational ideas testable.", "connection": "The foundation for DragonFly and a space for experiments alongside the language and interface tools."},
+      "id": "decima",
+      "name": "Decima‑8",
+      "label": "Decima",
+      "color": "#535898",
+      "kind": "research",
+      "ru": {
+        "role": "Вычислительная модель",
+        "status": "Исследование",
+        "description": "Нейроморфная архитектура с тайлами, сигналами и явным состоянием. Исполняемое C-ядро и стенды помогают проверять вычислительные гипотезы.",
+        "connection": "Основа DragonFly и пространство экспериментов, рядом с которым развиваются язык и инструменты интерфейса."
+      },
+      "en": {
+        "role": "Computational model",
+        "status": "Research",
+        "description": "A neuromorphic architecture built around tiles, signals and explicit state. An executable C core and test benches make computational ideas testable.",
+        "connection": "The foundation for DragonFly and a space for experiments alongside the language and interface tools."
+      },
+      "links": [
+        {
+          "label": "docs",
+          "url": "https://decima.rulerom.com/"
+        }
+      ]
+    },
+    {
+      "id": "dragonfly",
+      "name": "DragonFly",
+      "label": "DragonFly",
+      "color": "#36795a",
+      "kind": "research",
+      "ru": {
+        "role": "Зрение и движение",
+        "status": "Исследовательский прототип",
+        "description": "Бинокулярный зрительный стенд на двух независимых ядрах Decima‑8. Исследуем выделение малых движущихся целей и поведение в сцене с помехами.",
+        "connection": "Проверяет идеи Decima на задаче восприятия. Реальная камера и аппаратный полёт ещё не проверены."
+      },
+      "en": {
+        "role": "Vision and motion",
+        "status": "Research prototype",
+        "description": "A binocular vision test bench using two independent Decima‑8 cores. Exploring small moving targets and behavior in scenes with distractors.",
+        "connection": "Tests Decima ideas against perception. Real-camera capture and hardware flight have not been validated yet."
+      },
       "links": []
     },
     {
-      "id": "dragonfly", "name": "DragonFly", "label": "DragonFly", "color": "#36795a", "kind": "research",
-      "ru": {"role": "Зрение и движение", "status": "Исследовательский прототип", "description": "Бинокулярный зрительный стенд на двух независимых ядрах Decima‑8. Исследуем выделение малых движущихся целей и поведение в сцене с помехами.", "connection": "Проверяет идеи Decima на задаче восприятия. Реальная камера и аппаратный полёт ещё не проверены."},
-      "en": {"role": "Vision and motion", "status": "Research prototype", "description": "A binocular vision test bench using two independent Decima‑8 cores. Exploring small moving targets and behavior in scenes with distractors.", "connection": "Tests Decima ideas against perception. Real-camera capture and hardware flight have not been validated yet."},
-      "links": []
+      "id": "liza",
+      "name": "Liza",
+      "label": "Liza",
+      "color": "#28808b",
+      "kind": "experimental",
+      "ru": {
+        "role": "Системный язык",
+        "status": "Экспериментальный язык",
+        "description": "Язык для сетевых сервисов с явными эффектами, владением и контролем ресурсов. Прототип компилятора проходит путь от исходника до нативного кода через LLVM.",
+        "connection": "Проверяем контракты и сетевую модель на задачах VideoGrace. Экспериментальный CAN worker уже прошёл проверку на настоящем сервере."
+      },
+      "en": {
+        "role": "Systems language",
+        "status": "Experimental language",
+        "description": "A language for network services with explicit effects, ownership and resource control. The compiler prototype takes source code to native executables through LLVM.",
+        "connection": "VideoGrace provides real networking problems to test the contracts. An experimental CAN worker has completed a task on a real server."
+      },
+      "links": [
+        {
+          "label": "docs",
+          "url": "https://liza.rulerom.com/"
+        },
+        {
+          "label": "code",
+          "url": "https://github.com/rulerom/liza"
+        }
+      ]
     },
     {
-      "id": "liza", "name": "Liza", "label": "Liza", "color": "#28808b", "kind": "experimental",
-      "ru": {"role": "Системный язык", "status": "Экспериментальный язык", "description": "Язык для сетевых сервисов с явными эффектами, владением и контролем ресурсов. Прототип компилятора проходит путь от исходника до нативного кода через LLVM.", "connection": "Проверяем контракты и сетевую модель на задачах VideoGrace. Экспериментальный CAN worker уже прошёл проверку на настоящем сервере."},
-      "en": {"role": "Systems language", "status": "Experimental language", "description": "A language for network services with explicit effects, ownership and resource control. The compiler prototype takes source code to native executables through LLVM.", "connection": "VideoGrace provides real networking problems to test the contracts. An experimental CAN worker has completed a task on a real server."},
-      "links": [{"label": "docs", "url": "https://liza.rulerom.com/"}, {"label": "code", "url": "https://github.com/rulerom/liza"}]
+      "id": "wui",
+      "name": "WUI",
+      "label": "WUI",
+      "color": "#a54f80",
+      "kind": "library",
+      "ru": {
+        "role": "Нативные интерфейсы",
+        "status": "Открытая C++17-библиотека",
+        "description": "Общие контролы, темы и события для Windows и Linux, экспериментальные macOS и WebAssembly. Один UI-код используется в инструментах и приложениях.",
+        "connection": "Работает в нативном VideoGrace и инструментах Decima. Прикладные сценарии помогают находить проблемы с устройствами, потоками и отрисовкой."
+      },
+      "en": {
+        "role": "Native interfaces",
+        "status": "Open-source C++17 library",
+        "description": "Shared controls, themes and events for Windows and Linux, with experimental macOS and WebAssembly backends. UI code is reused across tools and applications.",
+        "connection": "Used by native VideoGrace and Decima tools. Real applications expose device, threading and rendering problems."
+      },
+      "links": [
+        {
+          "label": "site",
+          "url": "http://libwui.org/"
+        },
+        {
+          "label": "code",
+          "url": "https://github.com/intent-garden/wui"
+        }
+      ]
     },
     {
-      "id": "wui", "name": "WUI", "label": "WUI", "color": "#a54f80", "kind": "library",
-      "ru": {"role": "Нативные интерфейсы", "status": "Открытая C++17-библиотека", "description": "Общие контролы, темы и события для Windows и Linux, экспериментальные macOS и WebAssembly. Один UI-код используется в инструментах и приложениях.", "connection": "Работает в нативном VideoGrace и инструментах Decima. Прикладные сценарии помогают находить проблемы с устройствами, потоками и отрисовкой."},
-      "en": {"role": "Native interfaces", "status": "Open-source C++17 library", "description": "Shared controls, themes and events for Windows and Linux, with experimental macOS and WebAssembly backends. UI code is reused across tools and applications.", "connection": "Used by native VideoGrace and Decima tools. Real applications expose device, threading and rendering problems."},
-      "links": [{"label": "site", "url": "http://libwui.org/"}, {"label": "code", "url": "https://github.com/intent-garden/wui"}]
-    },
-    {
-      "id": "videograce", "name": "VideoGrace", "label": "VideoGrace", "color": "#39749b", "kind": "product",
-      "ru": {"role": "Связь и совместная работа", "status": "Прикладной продукт", "description": "Видеоконференции, мессенджер, записи и AI-сервисы: расшифровка речи, перевод и саммари встречи. Рабочая среда, в которой инженерные решения встречаются с реальными пользователями.", "connection": "Нативный UI использует WUI. Сервисный API CAN даёт Liza практический сценарий интеграции; это экспериментальная работа, а не замена текущего сервера."},
-      "en": {"role": "Communication and collaboration", "status": "Product", "description": "Video meetings, messaging, recordings and AI services: transcripts, translation and meeting summaries. A working product where engineering choices meet real users.", "connection": "Its native UI uses WUI. The CAN service API gives Liza a practical integration target; this is experimental work rather than a replacement for the current server."},
-      "links": [{"label": "site", "url": "https://videograce.ru/"}]
+      "id": "videograce",
+      "name": "VideoGrace",
+      "label": "VideoGrace",
+      "color": "#39749b",
+      "kind": "product",
+      "ru": {
+        "role": "Связь и совместная работа",
+        "status": "Прикладной продукт",
+        "description": "Видеоконференции, мессенджер, записи и AI-сервисы: расшифровка речи, перевод и саммари встречи. Рабочая среда, в которой инженерные решения встречаются с реальными пользователями.",
+        "connection": "Нативный UI использует WUI. Сервисный API CAN даёт Liza практический сценарий интеграции; это экспериментальная работа, а не замена текущего сервера."
+      },
+      "en": {
+        "role": "Communication and collaboration",
+        "status": "Product",
+        "description": "Video meetings, messaging, recordings and AI services: transcripts, translation and meeting summaries. A working product where engineering choices meet real users.",
+        "connection": "Its native UI uses WUI. The CAN service API gives Liza a practical integration target; this is experimental work rather than a replacement for the current server."
+      },
+      "links": [
+        {
+          "label": "site",
+          "url": "https://videograce.ru/"
+        }
+      ]
     }
   ],
   "connections": [
-    {"from": "decima", "to": "dragonfly", "kind": "use", "ru": "Ядро → зрительный стенд", "en": "Core → vision test bench"},
-    {"from": "decima", "to": "liza", "kind": "ideas", "ru": "Идеи и контракты", "en": "Ideas and contracts"},
-    {"from": "decima", "to": "wui", "kind": "use", "ru": "Интерфейсы инструментов", "en": "Interfaces for tools"},
-    {"from": "liza", "to": "videograce", "kind": "ideas", "ru": "Эксперименты с CAN", "en": "CAN experiments"},
-    {"from": "wui", "to": "videograce", "kind": "use", "ru": "Нативный UI", "en": "Native UI"}
+    {
+      "from": "decima",
+      "to": "dragonfly",
+      "kind": "use",
+      "ru": "Ядро → зрительный стенд",
+      "en": "Core → vision test bench"
+    },
+    {
+      "from": "decima",
+      "to": "liza",
+      "kind": "ideas",
+      "ru": "Идеи и контракты",
+      "en": "Ideas and contracts"
+    },
+    {
+      "from": "decima",
+      "to": "wui",
+      "kind": "use",
+      "ru": "Интерфейсы инструментов",
+      "en": "Interfaces for tools"
+    },
+    {
+      "from": "liza",
+      "to": "videograce",
+      "kind": "ideas",
+      "ru": "Эксперименты с CAN",
+      "en": "CAN experiments"
+    },
+    {
+      "from": "wui",
+      "to": "videograce",
+      "kind": "use",
+      "ru": "Нативный UI",
+      "en": "Native UI"
+    }
   ]
 }
